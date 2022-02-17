@@ -1,0 +1,45 @@
+.video-block {
+  position: relative;
+  max-width: max-content;
+
+  &__video {
+    video {
+      width: 535px;
+      height: 475px;
+      object-fit: cover;
+    }
+  }
+
+  &__play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+
+    &--played {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s;
+  }
+
+  &--played {
+    &::before {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.hero {
+  padding-top: 65px;
+  background-image: url("../img/hero-bg.png");
+  background-position: center;
+  background-size: 1704px 564px;
+  background-repeat: no-repeat;
+  background-color: $bg;
+
+  &__container {
+    max-width: 1520px;
+  }
+
+  &__content {
+    padding-top: 120px;
+    padding-left: 156px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    max-width: 670px;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 68px;
+    color: $title-color;
+  }
+
+  &__description {
+    margin-bottom: 80px;
+    max-width: 470px;
+    font-family: $font-family-second;
+  }
+
+  &__link {
+    padding: 14px 44px;
+
+    @extend %btn;
+  }
+
+  .swiper-pagination {
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper-pagination-bullet {
+    position: relative;
+    line-height: 1;
+    background: $accent-color;
+
+    &:not(:last-child) {
+      margin-right: 23px;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    border: 1px solid $red-color;
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      border-radius: 50%;
+      width: 6px;
+      height: 6px;
+      background: $red-color;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

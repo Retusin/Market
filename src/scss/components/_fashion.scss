@@ -1,0 +1,40 @@
+.fashion {
+  padding-top: 125px;
+  padding-bottom: 60px;
+  background-image: url("../img/fashion-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    padding-top: 74px;
+  }
+
+  &__subtitle {
+    font-family: $font-family-second;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: $red-color;
+  }
+
+  &__title {
+    margin-top: 5px;
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    margin-bottom: 64px;
+  }
+
+  &__link {
+    padding: 15px 39px;
+
+    @extend %btn;
+  }
+}

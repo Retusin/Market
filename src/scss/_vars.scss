@@ -1,0 +1,32 @@
+// Ограничение макета
+$wrapper-max: 1920px !default;
+$wrapper-min: 280px !default;
+
+// Контейнер
+$container-max-widths: 1200px;
+$container-padding: 15px;
+
+// Шрифт
+$font-family-base: "Roboto", sans-serif;
+$font-family-second: "Quicksand", sans-serif;
+$font-weight-base: 400;
+$font-style-base: normal;
+
+// Цвета
+$color-bg-base: #fff;
+$color-text-base: #61594d;
+$accent-color: #8d8d8d;
+$red-color: #fe3e57;
+$title-color: #29282d;
+$bg: #f6f6f6;
+
+%btn {
+  padding: 14px 35px;
+  box-shadow: 0 7px 20px 0 rgba(255, 17, 48, 0.3);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $red-color;
+}

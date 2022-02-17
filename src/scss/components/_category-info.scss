@@ -1,0 +1,10 @@
+.category-info {
+  padding: 120px 0;
+  background-image: url("../img/categoty-bg-left.svg"), url("../img/categoty-bg-right.svg");
+  background-position: left 343px, right 327px;
+  background-repeat: no-repeat, no-repeat;
+
+  &__title {
+    margin-bottom: 7px;
+  }
+}
