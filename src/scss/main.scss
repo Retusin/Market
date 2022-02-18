@@ -6,11 +6,15 @@
 
 // подключения компонентов страницы
 @import "./components/header";
-@import "./components/nav";
 @import "./components/hero";
-@import "./components/info";
 @import "./components/category";
+@import "./components/fashion";
+@import "./components/product";
+@import "./components/footer";
+
+// маленькие компоненты
+@import "./components/nav";
+@import "./components/info";
 @import "./components/category-info";
 @import "./components/video-block";
-@import "./components/fashion";
-@import "./components/footer";
+@import "./components/product-item";
