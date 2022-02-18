@@ -1,0 +1,32 @@
+.product {
+  padding-top: 106px;
+  padding-bottom: 120px;
+
+  &__title {
+    margin-bottom: 6px;
+  }
+
+  &__text {
+    max-width: 600px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 63px 30px;
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+    border: 1px solid $red-color;
+    padding: 12px 24px;
+    max-width: max-content;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: $title-color;
+  }
+}
