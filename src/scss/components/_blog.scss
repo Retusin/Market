@@ -1,0 +1,33 @@
+.blog {
+  padding-top: 20px;
+  padding-bottom: 162px;
+  background-image: url("../img/blog-bg.png");
+  background-position: bottom 90px left 125px;
+  background-repeat: no-repeat;
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    max-width: 580px;
+  }
+
+  &__items {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: -27px;
+      top: -34px;
+      width: 126px;
+      height: 53px;
+      background-image: url("../img/decore.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
