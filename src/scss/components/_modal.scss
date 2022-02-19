@@ -1,10 +1,11 @@
 .modal {
   margin: 0 auto 115px;
-  padding-top: 100px;
-  max-width: 570px;
+  padding-top: 117px;
+  padding-bottom: 50px;
+  max-width: 600px;
 
   &__links {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     text-align: center;
   }
 
@@ -22,12 +23,17 @@
 
   &__label {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 36px;
+    font-family: $font-family-second;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $accent-color;
   }
 
   &__input {
     display: block;
-    margin-top: 4px;
+    margin-top: 14px;
     border: none;
     padding: 0 15px;
     width: 100%;
@@ -37,7 +43,7 @@
 
   &__btn {
     display: block;
-    padding: 14px 0;
+    padding: 20px 0;
     width: 100%;
     font-weight: 400;
     font-size: 16px;
@@ -48,9 +54,18 @@
     background-color: $title-color;
   }
 
+  &__text {
+    margin-bottom: 25px;
+    font-family: $font-family-second;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $accent-color;
+  }
+
   &__error {
     display: inline-block;
-    margin-top: 12px;
+    margin-top: 21px;
     color: $red-color;
   }
 }
