@@ -1,0 +1,56 @@
+.modal {
+  margin: 0 auto 115px;
+  padding-top: 100px;
+  max-width: 570px;
+
+  &__links {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__link {
+    margin: 0 26px;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #909090;
+
+    &--active {
+      color: $red-color;
+    }
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    display: block;
+    margin-top: 4px;
+    border: none;
+    padding: 0 15px;
+    width: 100%;
+    height: 60px;
+    background-color: #f6f6f6;
+  }
+
+  &__btn {
+    display: block;
+    padding: 14px 0;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $title-color;
+  }
+
+  &__error {
+    display: inline-block;
+    margin-top: 12px;
+    color: $red-color;
+  }
+}
