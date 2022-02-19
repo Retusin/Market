@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="wrapper">
+    @include('partials/header.html')
+    <main class="main">
+      <section class="top">
+        <div class="top__container" style="background-image: url('../img/top-bg.jpg')">
+          <div class="container">
+            <h2 class="title top__title">Shop page</h2>
+            <div class="breadcrumbs">
+              <ul class="list-reset breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a href="index.html" class="breadcrumbs__link"> home </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link"> Shop page </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop">
+        <div class="container">
+          <div class="shop__inner">
+            <div class="shop__filters filter">
+              <div class="fitler-search filter__item">
+                <h3 class="filter__title">Search</h3>
+                <form class="filter-search__form" action="">
+                  <input class="filter-search__input" placeholder="Search your keyword..." type="text">
+                  <button class="btn-reset filter-search__btn" type="submit">
+                    <img src="img/search-white.svg" alt="search img">
+                  </button>
+                </form>
+              </div>
+              <div class="filter__item filter-color">
+                <h3 class="filter__title">Color fiter</h3>
+                <form action="#" class="fiter-color__form">
+                  <label class="filter-color__label">
+                    <span class="filter-color__text">Blue (15)</span>
+                    <div class="filter-color__box">
+                      <input type="checkbox" class="filter-color__input">
+                      <span class="filter-color__checkbox filter-color__checkbox--blue"></span>
+                    </div>
+                  </label>
+                  <label class="filter-color__label">
+                    <span class="filter-color__text">Red (09)</span>
+                    <div class="filter-color__box">
+                      <input type="checkbox" class="filter-color__input">
+                      <span class="filter-color__checkbox filter-color__checkbox--red"></span>
+                    </div>
+                  </label>
+                  <label class="filter-color__label">
+                    <span class="filter-color__text">Green (28)</span>
+                    <div class="filter-color__box">
+                      <input type="checkbox" class="filter-color__input">
+                      <span class="filter-color__checkbox filter-color__checkbox--green"></span>
+                    </div>
+                  </label>
+                  <label class="filter-color__label">
+                    <span class="filter-color__text">Orange (11)</span>
+                    <div class="filter-color__box">
+                      <input type="checkbox" class="filter-color__input">
+                      <span class="filter-color__checkbox filter-color__checkbox--orange"></span>
+                    </div>
+                  </label>
+                  <label class="filter-color__label">
+                    <span class="filter-color__text">Black (05)</span>
+                    <div class="filter-color__box">
+                      <input type="checkbox" class="filter-color__input">
+                      <span class="filter-color__checkbox filter-color__checkbox--black"></span>
+                    </div>
+                  </label>
+                  <label class="filter-color__label">
+                    <span class="filter-color__text">Purple (21)</span>
+                    <div class="filter-color__box">
+                      <input type="checkbox" class="filter-color__input">
+                      <span class="filter-color__checkbox filter-color__checkbox--purple"></span>
+                    </div>
+                  </label>
+                </form>
+              </div>
+              <div class="filter__item filter-size">
+                <h3 class="filter__title">SIZE FILTER</h3>
+                <form action="#" class="filter-size__form">
+                  <label class="filter-size__label">
+                    <input type="checkbox" class="filter-size__input">
+                    <span class="filter-size__checkbox"></span>
+                    <span class="filter-size__text">X-small</span>
+                  </label>
+                  <label class="filter-size__label">
+                    <input type="checkbox" class="filter-size__input">
+                    <span class="filter-size__checkbox"></span>
+                    <span class="filter-size__text">Small</span>
+                  </label>
+                  <label class="filter-size__label">
+                    <input type="checkbox" class="filter-size__input">
+                    <span class="filter-size__checkbox"></span>
+                    <span class="filter-size__text">Medium</span>
+                  </label>
+                  <label class="filter-size__label">
+                    <input type="checkbox" class="filter-size__input">
+                    <span class="filter-size__checkbox"></span>
+                    <span class="filter-size__text">Large</span>
+                  </label>
+                  <label class="filter-size__label">
+                    <input type="checkbox" class="filter-size__input">
+                    <span class="filter-size__checkbox"></span>
+                    <span class="filter-size__text">XXL</span>
+                  </label>
+                </form>
+              </div>
+              <div class="filter__item filter-category">
+                <h3 class="filter__title">Category</h3>
+                <form action="#" class="filter-category__form">
+                  <label class="filter-category__label">
+                    <input type="checkbox" class="filter-category__input">
+                    <div class="filter-category__checkbox">
+                      <span>Woman</span>
+                      <span>48</span>
+                    </div>
+                  </label>
+                  <label class="filter-category__label">
+                    <input type="checkbox" class="filter-category__input">
+                    <div class="filter-category__checkbox">
+                      <span>Man</span>
+                      <span>30</span>
+                    </div>
+                  </label>
+                  <label class="filter-category__label">
+                    <input type="checkbox" class="filter-category__input">
+                    <div class="filter-category__checkbox">
+                      <span>Sale Products</span>
+                      <span>92</span>
+                    </div>
+                  </label>
+                  <label class="filter-category__label">
+                    <input type="checkbox" class="filter-category__input">
+                    <div class="filter-category__checkbox">
+                      <span>Fashion</span>
+                      <span>121</span>
+                    </div>
+                  </label>
+                  <label class="filter-category__label">
+                    <input type="checkbox" class="filter-category__input">
+                    <div class="filter-category__checkbox">
+                      <span>Hot Dresses</span>
+                      <span>52</span>
+                    </div>
+                  </label>
+                  <label class="filter-category__label">
+                    <input type="checkbox" class="filter-category__input">
+                    <div class="filter-category__checkbox">
+                      <span>Accessories</span>
+                      <span>88</span>
+                    </div>
+                  </label>
+                </form>
+              </div>
+              <div class="filter__item filter-popular">
+                <h3 class="filter__title">Popular Tags</h3>
+                <form action="#" class="filter-popular__form">
+                  <label class="filter-popular__label">
+                    <input type="checkbox" class="filter-popular__input">
+                    <span class="filter-popular__checkbox">
+                      Sweetshirt
+                    </span>
+                  </label>
+                  <label class="filter-popular__label">
+                    <input type="checkbox" class="filter-popular__input">
+                    <span class="filter-popular__checkbox">
+                      Man Accessories
+                    </span>
+                  </label>
+                  <label class="filter-popular__label">
+                    <input type="checkbox" class="filter-popular__input">
+                    <span class="filter-popular__checkbox">
+                      Fashion
+                    </span>
+                  </label>
+                  <label class="filter-popular__label">
+                    <input type="checkbox" class="filter-popular__input">
+                    <span class="filter-popular__checkbox">
+                      Polo
+                    </span>
+                  </label>
+                  <label class="filter-popular__label">
+                    <input type="checkbox" class="filter-popular__input">
+                    <span class="filter-popular__checkbox">
+                      T-Shirt
+                    </span>
+                  </label>
+                  <label class="filter-popular__label">
+                    <input type="checkbox" class="filter-popular__input">
+                    <span class="filter-popular__checkbox">
+                      Jewellery
+                    </span>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <div class="shop-content">
+              <div class="shop-content__filter">
+                <div class="shop-content__filter-buttons">
+                  View
+                  <button class="btn-reset shop-content__filter-btn shop-content__filter-btn--active">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px"
+                      height="15px">
+                      <path fill-rule="evenodd" fill="rgb(141, 141, 141)"
+                        d="M-0.000,3.750 L3.750,3.750 L3.750,-0.000 L-0.000,-0.000 L-0.000,3.750 ZM5.625,15.000 L9.375,15.000 L9.375,11.250 L5.625,11.250 L5.625,15.000 ZM-0.000,15.000 L3.750,15.000 L3.750,11.250 L-0.000,11.250 L-0.000,15.000 ZM-0.000,9.375 L3.750,9.375 L3.750,5.625 L-0.000,5.625 L-0.000,9.375 ZM5.625,9.375 L9.375,9.375 L9.375,5.625 L5.625,5.625 L5.625,9.375 ZM11.250,-0.000 L11.250,3.750 L15.000,3.750 L15.000,-0.000 L11.250,-0.000 ZM5.625,3.750 L9.375,3.750 L9.375,-0.000 L5.625,-0.000 L5.625,3.750 ZM11.250,9.375 L15.000,9.375 L15.000,5.625 L11.250,5.625 L11.250,9.375 ZM11.250,15.000 L15.000,15.000 L15.000,11.250 L11.250,11.250 L11.250,15.000 Z" />
+                    </svg>
+                  </button>
+                  <button class="btn-reset shop-content__filter-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
+                      height="15px">
+                      <path fill-rule="evenodd" fill="rgb(141, 141, 141)"
+                        d="M5.835,14.998 L5.835,10.827 L19.994,10.827 L19.994,14.998 L5.835,14.998 ZM5.835,5.413 L19.994,5.413 L19.994,9.585 L5.835,9.585 L5.835,5.413 ZM5.835,0.000 L19.994,0.000 L19.994,4.172 L5.835,4.172 L5.835,0.000 ZM0.007,10.827 L4.429,10.827 L4.429,14.998 L0.007,14.998 L0.007,10.827 ZM0.007,5.413 L4.429,5.413 L4.429,9.585 L0.007,9.585 L0.007,5.413 ZM0.007,0.000 L4.429,0.000 L4.429,4.172 L0.007,4.172 L0.007,0.000 Z" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="shop-content__filter-selects">
+                  <select class="btn-reset shop-content__filter-sort">
+                    <option value="1">Sort By Default</option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                  </select>
+                  <select class="btn-reset shop-content__filter-show">
+                    <option value="1">Show 9</option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                  </select>
+                </div>
+              </div>
+              <div class="shop-content__inner">
+                <div class="product-item">
+                  <div class="product-item__img-box">
+                    <img src="img/product-1.jpg" alt="Product" class="product-item__images" />
+                    <div class="product-item__link-box">
+                      <a href="#" class="product-item__link">
+                        <svg class="product-item__icon">
+                          <use xlink:href="img/sprite.svg#search"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="product-item__link">
+                        <svg class="product-item__icon">
+                          <use xlink:href="img/sprite.svg#cart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="product-item__link">
+                        <svg class="product-item__icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="product-item__stars">
+
+                    </div>
+                    <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                    <div class="product-item__price">
+                      <div class="product-item__price--new">$34.00</div>
+                      <div class="product-item__price--old">$27.00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item product-item--sale">
+                  <div class="product-item__img-box">
+                    <img src="img/product-2.jpg" alt="Product" class="product-item__images" />
+                    <div class="product-item__link-box">
+                      <a href="#" class="product-item__link">
+                        <svg class="product-item__icon">
+                          <use xlink:href="img/sprite.svg#search"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="product-item__link">
+                        <svg class="product-item__icon">
+                          <use xlink:href="img/sprite.svg#cart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="product-item__link">
+                        <svg class="product-item__icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="product-item__stars"></div>
+                    <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                    <div class="product-item__price">
+                      <div class="product-item__price--new">$34.00</div>
+                      <div class="product-item__price--old">$27.00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="product-item__img-box">
+                    <img src="img/product-3.jpg" alt="Product" class="product-item__images" />
+                    <div class="product-item__link-box">
+                      <a href="#" class="product-item__link">
+                        <svg class="product-item__icon">
+                          <use xlink:href="img/sprite.svg#search"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="product-item__link">
+                        <svg class="product-item__icon">
+                          <use xlink:href="img/sprite.svg#cart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="product-item__link">
+                        <svg class="product-item__icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="product-item__stars"></div>
+                    <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                    <div class="product-item__price">
+                      <div class="product-item__price--new">$34.00</div>
+                      <div class="product-item__price--old">$27.00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item product-item--sale">
+                  <div class="product-item__img-box">
+                    <img src="img/product-4.jpg" alt="Product" class="product-item__images" />
+                    <div class="product-item__link-box">
+                      <a href="#" class="product-item__link">
+                        <svg class="product-item__icon">
+                          <use xlink:href="img/sprite.svg#search"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="product-item__link">
+                        <svg class="product-item__icon">
+                          <use xlink:href="img/sprite.svg#cart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="product-item__link">
+                        <svg class="product-item__icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="product-item__stars"></div>
+                    <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                    <div class="product-item__price">
+                      <div class="product-item__price--new">$34.00</div>
+                      <div class="product-item__price--old">$27.00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="product-item__img-box">
+                    <img src="img/product-5.jpg" alt="Product" class="product-item__images" />
+                    <div class="product-item__link-box">
+                      <a href="#" class="product-item__link">
+                        <svg class="product-item__icon">
+                          <use xlink:href="img/sprite.svg#search"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="product-item__link">
+                        <svg class="product-item__icon">
+                          <use xlink:href="img/sprite.svg#cart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="product-item__link">
+                        <svg class="product-item__icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="product-item__stars"></div>
+                    <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                    <div class="product-item__price">
+                      <div class="product-item__price--new">$34.00</div>
+                      <div class="product-item__price--old">$27.00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item product-item--sale">
+                  <div class="product-item__img-box">
+                    <img src="img/product-6.jpg" alt="Product" class="product-item__images" />
+                    <div class="product-item__link-box">
+                      <a href="#" class="product-item__link">
+                        <svg class="product-item__icon">
+                          <use xlink:href="img/sprite.svg#search"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="product-item__link">
+                        <svg class="product-item__icon">
+                          <use xlink:href="img/sprite.svg#cart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="product-item__link">
+                        <svg class="product-item__icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="product-item__stars"></div>
+                    <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                    <div class="product-item__price">
+                      <div class="product-item__price--new">$34.00</div>
+                      <div class="product-item__price--old">$27.00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination">
+                <a class="pagination__prev pagination__arrows" href="#">PREVIOUS</a>
+                <ul class="list-reset pagination__list">
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">2</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link pagination__link--active">3</a>
+                  </li>
+                  <li class="pagination__item">
+                    <span href="#" class="pagination__link">...</span>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">10</a>
+                  </li>
+                </ul>
+                <a class="pagination__next pagination__arrows" href="#">NEXT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

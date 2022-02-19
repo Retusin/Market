@@ -30,3 +30,11 @@ $bg: #f6f6f6;
   color: #fff;
   background-color: $red-color;
 }
+
+%checkbox-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
