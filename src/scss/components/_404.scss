@@ -1,0 +1,31 @@
+.page-404 {
+  padding: 110px 0 120px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 570px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: left;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 55px;
+    max-width: 470px;
+    text-align: left;
+  }
+
+  &__btn {
+    @extend %btn;
+  }
+}
